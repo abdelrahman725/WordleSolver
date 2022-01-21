@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle helper</title>
+<script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>
+    Wordle Helper
+  </h1>
+  <h2>automatic words generator for the popular <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank"  rel="noopener noreferrer">Wordle Game</a></h2> 
+  <br>
+  
+
+  
+  
+
+  
+  <input id = "valid" type="text" placeholder="included letters"  maxlength="5" onkeypress="return /[a-z]/i.test(event.key)">
+  <br>
+  
+  <input id ="absent" type="text" placeholder="excluded letters"  maxlength="20" onkeypress="return /[a-z]/i.test(event.key)">
+  <br>
+
+  <div class="PositionsDiv">
+    <input data-position="0"  class="right" type="text"  placeholder="1st" maxlength="1">
+    <input data-position="1"  class="right" type="text"  placeholder="2nd" maxlength="1">
+    <input data-position="2"  class="right" type="text"  placeholder="3rd" maxlength="1">
+    <input data-position="3"  class="right" type="text"  placeholder="4th" maxlength="1">
+    <input data-position="4"  class="right" type="text"  placeholder="5th" maxlength="1">
+  </div>
+  <br>
+  <br>
+
+<button id ="generate">get words</button>
+  <br>
+  <br>
+
+  
+<div class="results">
+
+</div>
+  
+</body>
+</html>
